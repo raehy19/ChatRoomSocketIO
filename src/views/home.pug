@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Chatrooms
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body
+        header
+            h1 Chatrooms
+        main
+            form#nickname
+                    h4 Your Nickname: Anonymous
+                    input(placeholder="Nickname", required, type="text")
+                    button Save Nickname 
+            div#welcome
+                h4 Open Rooms:
+                ul
+                form#roomEnter
+                    input(placeholder="room name", required, type="text")
+                    button Enter Room
+            div#room
+                h3 Room : 
+                h4 Number of people :
+                ul
+                form#msg
+                    input(placeholder="message", required, type="text")
+                    button Send
+                button#leave Leave Room
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js") 
