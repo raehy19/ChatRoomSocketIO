@@ -1,3 +1,3 @@
-# Zoom Clone
+# Chat Room
 
-Zoom Clone using WebRTC and Websockets
+Chatroom using socket.io
